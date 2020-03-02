@@ -1,2 +1,8 @@
-# tutorial-svn
-SVN commad-lline quick reference
+# SVN Tutorial
+SVN commad-line quick reference
+
+## Before to Start
+
+svn --version --quiet
+
+svn --version
