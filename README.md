@@ -2,6 +2,10 @@
 
 Breve guida di riferimento all'utilizzo del comando ```svn```.
 
+## Introduzione
+
+> SVN non può sostituire il dialogo tra i membri del gruppo di sviluppo.
+
 ## Prima di iniziare
 
 Verifica se il comando svn è installato sul nostro computer
