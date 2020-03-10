@@ -84,4 +84,16 @@ Nei primi due casi è necessario indicare la risoluzione del conflitto con il co
 
 I conflitti che non vengono risolti immediatamente (es. durante una operazione di ```update```) possono essere processati in un secondo momento con il comando ```svn resolve```.
 
-Questo comando permette di risolvere i conflitti in modo interattivo oppure automatico.
+```svn resolve [PATH...]```
+
+Questo comando permette di risolvere i conflitti in modo interattivo oppure automatico. In modalità interattiva lo scorrimento delle cartelle è ricorsivo per default. Invece in modalità automatica lo scorrimento ricorsivo deve essere dichiarato esplicitamente tramite l'opzione ```-R [--recursive]```.
+
+Per risolvere automaticamente i conflitti è necessario specificare l'opzione ```--accept ARG``` con uno dei seguenti argomenti:
+
+* **base**
+* **working**
+* **mine-conflict**, **mine-full**
+* **theirs-conflict**, **theirs-full**
+
+Nella modalità interattiva viene richiesto, per ogni file, quale argomento applicare.
+
