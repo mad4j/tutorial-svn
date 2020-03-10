@@ -48,3 +48,4 @@ Il parametro di revisione ```@REV``` può essere specificato nei seguenti modi
 * **COMMITTED** indica l'ultima versione presente modficata sulla copia locale.
 * **PREV** indica la revisione immeditamente precedente a **COMMITTED**
 
+## Gestione dei conflitti
