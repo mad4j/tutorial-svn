@@ -30,6 +30,10 @@ dove
 Il parametro di revisione ```@REV``` può essere specificato nei seguenti modi
 
 * **NUMBER** indica una revsione specifica
-* **'{' DATE '}'** indica la revisione inziale ad una specifica data (es. **{2020-03-06}**)* 
-* **HEAD** indica l'ultima revisione del repository
-* **BASE** indica la revisione con la quale è stata creata la working copy
+* **'{' DATE '}'** indica la revisione inziale ad una specifica data (es. **{2020-03-06}**), se non viene indicta una ora allaro si intende 00:00, quindi il checkout sarà fatto relativo all'ultimo commit del giorno precedente 
+* **HEAD** indica l'ultima revisione del repository.
+* **BASE** indica la revisione "originale" presente sulla propria copia di lavoro; non si riverisce al server, ma solo alla copia locale.
+* **COMMITTED** indica l'ultima versione presente modficata sulla copia locale.
+* **PREV** indica la revisione immeditamente precedente a **COMMITTED**
+
+
