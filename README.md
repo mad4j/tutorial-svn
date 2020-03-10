@@ -79,3 +79,5 @@ A questo punto è possibile:
 Nei primi due casi è necessario indicare la risoluzione del conflitto con il comando ```svn resolve --accept working```.
 
 I conflitti che non vengono risolti immediatamente (es. durante una operazione di ```update```) possono essere processati in un secondo momento con il comando ```svn resolve```.
+
+Questo comando permette di risolvere i conflitti in modo interattivo oppure automatico.
