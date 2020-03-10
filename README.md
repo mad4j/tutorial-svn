@@ -62,10 +62,20 @@ repository revision
 
 La sezione marcata come ```.mine``` contiene la porzione di testo che ha generato il conflitto. La sezione sottostante, marcata con il numero di versione (es. ```.r1111```) contiene la porzione di testo originale.
 
-Inoltre vengono creati tre nuovi file:
+Inoltre vengono creati tre nuovi file temporanei:
 
 * **document.mine** contiene la copia locale del documento che ha generato il conflitto
 * **document.rBASE** contiene la copia originale precedente alle modifiche locali
 * **document.rHEAD** contiene la copia più aggiornata sul repository
 
 Dove **BASE** e **HEAD** vengono sostituiti con i rispettivi numeri di revisione.
+
+A questo punto è possibile:
+
+* risolvere i conflitti manualmente
+* sovrascrivere il documento in conflitto con uno dei tre temporanei
+* utilizzare il comando ```revert``` per annullare le modifiche locali
+
+Nei primi due casi è necessario indicare la risoluzione del conflitto con il comando ```svn resolve --accept working```.
+
+I conflitti che non vengono risolti immediatamente (es. durante una operazione di ```update```) possono essere processati in un secondo momento con il comando ```svn resolve```.
