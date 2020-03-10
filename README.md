@@ -49,3 +49,23 @@ Il parametro di revisione ```@REV``` può essere specificato nei seguenti modi
 * **PREV** indica la revisione immeditamente precedente a **COMMITTED**
 
 ## Gestione dei conflitti
+Se viene generato un conflitto, modifiche effettuate da diverse copie locali si sovrappongono, allora ci verrà chiesto di gestirlo.
+Nel caso di documenti di testo vegono inseriti nel dei marcatori che indicano le sezioni in conflitto:
+
+```
+<<<<<<< .mine
+local copy revision
+=======
+repository revision
+>>>>>>> .r1111
+```
+
+La sezione marcata come ```.mine``` contiene la porzione di testo che ha generato il conflitto. La sezione sottostante, marcata con il numero di versione (es. ```.r1111```) contiene la porzione di testo originale.
+
+Inoltre vengono creati tre nuovi file:
+
+* **document.mine** contiene la copia locale del documento che ha generato il conflitto
+* **document.rBASE** contiene la copia originale precedente alle modifiche locali
+* **document.rHEAD** contiene la copia più aggiornata sul repository
+
+Dove **BASE** e **HEAD** vengono sostituiti con i rispettivi numeri di revisione.
