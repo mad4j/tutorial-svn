@@ -12,6 +12,18 @@ Restituisce la versione correntemente installata sul computer ed accessibile di 
 
 ```1.9.7```
 
+## Come ottenere aiuto
+
+Per ottenere informazioni sull'utlizzo del comando svn è possibile utilizzare la seguente opzione
+
+```svn help```
+
+Per ottenere informazioni dettagliate su uno specifico comando è possibile utilizzare
+
+```svn help COMMAND```
+
+dove con **COMMAND** si indica il comando per il quale si vogliono ottenere informazioni (es. ```svn help chekcou```).
+
 ## Creare una copia di lavoro locale
 
 Per creare una copia di lavoro sul nostro computer è necessario utilizzare il comando ```checkout```
@@ -35,5 +47,4 @@ Il parametro di revisione ```@REV``` può essere specificato nei seguenti modi
 * **BASE** indica la revisione "originale" presente sulla propria copia di lavoro; non si riverisce al server, ma solo alla copia locale.
 * **COMMITTED** indica l'ultima versione presente modficata sulla copia locale.
 * **PREV** indica la revisione immeditamente precedente a **COMMITTED**
-
 
