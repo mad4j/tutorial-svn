@@ -1,8 +1,13 @@
 # SVN Tutorial
-SVN commad-line quick reference
 
-## Before to Start
+Breve guida di riferimento all'utilizzo del comando ```svn```.
 
-svn --version --quiet
+## Prima di iniziare
 
-svn --version
+Verifica se il comando svn è installato sul nostro computer
+
+```svn --version```
+
+Restituisce la versione correntemente installata sul computer ed accessibile di default da linea di comando.
+
+```1.9.7```
