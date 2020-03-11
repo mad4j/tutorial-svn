@@ -97,3 +97,34 @@ Per risolvere automaticamente i conflitti è necessario specificare l'opzione ``
 
 Nella modalità interattiva viene richiesto, per ogni file, quale argomento applicare.
 
+## Verificare lo stato della copia locale
+
+Per verificare lo stato delle modifiche effettuate nella copia locale è possibile utilizzare il comando:
+
+```svn status [PATH...] [-u] [--ignore-externals]```
+
+dove
+
+* **PATH...** indica su quali cartelle deve essere eseguito il comando
+* **-u** indica che deve essere indicato anche lo stato delle modifiche sul server
+* **--ignore-externals** indica che devono essere analizzati tutti i file indipendentemente dalle direttive **ignore**
+
+Se non vengono specificati parametri allora vengono mostrate solo le modifiche locali senza connettersi al server.
+
+Il comando indica lo stato delle risorse utilizzando le seguenti etichette:
+
+* **M** risorsa modificata loacalmente
+* **?** risorsa non sotto controllo di configurazione
+* **A** risorsa da aggiungere al repository
+* **C** risorsa in conflitto
+* **!** risorsa cancellata esternamente al controllo di configurazione
+* **X** risorsa inclusa da una direttiva **external**
+* **\*** risorsa con revisione più recente presente sul server 
+
+E' possibile ottenere informazioni dettagliate utilizzando il comando
+
+```svn help status```
+
+
+
+
