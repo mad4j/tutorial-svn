@@ -127,10 +127,26 @@ E' possibile ottenere informazioni dettagliate utilizzando il comando
 
 ## Consolidare le modifiche locali
 
-```svn ci --include-externals -m "description"```
+Per consolodiare le modifiche locali sul repository è possibile utilizzare il seguente comando:
+
+```svn ci [PATH...] [--include-externals] -m ARG```
+
+dove
+
+* **PATH...** indica le risorse (i.e. documenti o cartelle) che devono essere processate
+* **--include-externals** indica di processare anche le risorse che sono state indicate dalle diretteve **externals**
+* **-m ARG** indica il messaggio con cui descrivere l'aggiornamento
 
 ## Aggiornare la copia locale
 
+Per allineare la copia locale con gli ultimi aggiornamneti sul server è possibile utilizzare il seguente comando:
 
+```svn up [PATH...]```
+
+dove
+
+* **PATH...** indica le risorse (documenti o cartelle) da processare.
+
+Se viene indetificato un conflitto verrà richiesto di risolverlo immediatamente o in un momento successivo (**postpone**). In questo caso il documento verrà modificato in modo da contenere delle sezioni che evidenziano i conflitti e verranno creati tre file temporanei con le diverse versioni del documento che ha creato il conflitto.
 
 
