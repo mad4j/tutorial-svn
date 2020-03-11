@@ -125,6 +125,12 @@ E' possibile ottenere informazioni dettagliate utilizzando il comando
 
 ```svn help status```
 
+## Consolidare le modifiche locali
+
+```svn ci --include-externals -m "description"```
+
+## Aggiornare la copia locale
+
 
 
 
